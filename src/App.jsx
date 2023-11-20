@@ -1,5 +1,6 @@
 import { LikesCounter } from "./components/LikesCounter.jsx";
 import { Plot } from "./components/Plot.jsx";
+import ReviewForm from "./components/ReviewForm.jsx";
 
 function App() {
     return (
@@ -8,6 +9,7 @@ function App() {
             <h2>Rok produkcji: 1980</h2>
             <LikesCounter/>
             <Plot/>
+            <ReviewForm/>
         </>
     )
 }
