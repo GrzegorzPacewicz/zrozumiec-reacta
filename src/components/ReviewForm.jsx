@@ -54,7 +54,10 @@ export function ReviewForm() {
                         cols="30"
                         rows="10"></textarea>
                 </div>
-                <button type="submit">
+                <button
+                    type="submit"
+                    disabled={inputValue === "" || textareaValue === ""}
+                >
                     Dodaj
                 </button>
 
