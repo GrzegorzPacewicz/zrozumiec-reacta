@@ -22,7 +22,6 @@ function App({ text, shoulOpenNewTab }) {
                     iure libero omnis pariatur recusandae? Atque mollitia, nesciunt. Culpa dolorum enim eum impedit in
                     iusto libero! </p>
                 <Link 
-                text="https://zrozumiecreact.pl/"
                 shoulOpenNewTab={false}
                 />
 
