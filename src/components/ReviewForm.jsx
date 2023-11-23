@@ -51,8 +51,7 @@ export function ReviewForm() {
                         onChange={(event) => {
                             setTextareaValue(event.target.value)
                         }}
-                        cols="30"
-                        rows="10"></textarea>
+                       ></textarea>
                 </div>
                 <button
                     type="submit"
