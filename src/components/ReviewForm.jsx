@@ -1,11 +1,22 @@
 import { useState } from "react";
 
+const initialReviews = [
+    { author: "Brian", text: "No!", id: 1 },
+    { author: "Jessica", text: "Yes!", id: 2 },
+]
+
 export function ReviewForm() {
 
-    const [review, setReview] = useState(null)
+    const [reviews, setReviews] = useState(initialReviews)
     const [inputValue, setInputValue] = useState("");
     const [textareaValue, setTextareaValue] = useState("");
 
+    const reviewsElement = reviews.map((r) => (
+        <article>
+            <strong>{r.author}</strong>
+            <p>{r.text}</p>
+        </article>
+    ));
 
     function handleSubmit(event) {
         event.preventDefault();
@@ -13,17 +24,13 @@ export function ReviewForm() {
         const author = inputValue;
         const text = textareaValue;
 
-        setReview({author, text});
+        setReview({ author, text });
     }
 
     return (
         <>
-            {review && (
-                <article>
-                    <strong>{review.author}</strong>
-                    <p>{review.text}</p>
-                </article>
-            )}
+            <hr/>
+            <ul>{reviewsElement}</ul>
             <h2>Dodaj recenzję</h2>
             <form onSubmit={handleSubmit}>
                 <div>
@@ -51,7 +58,7 @@ export function ReviewForm() {
                         onChange={(event) => {
                             setTextareaValue(event.target.value)
                         }}
-                       ></textarea>
+                    ></textarea>
                 </div>
                 <button
                     type="submit"

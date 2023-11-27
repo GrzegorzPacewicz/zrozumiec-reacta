@@ -12,5 +12,3 @@ export function Link({ text = address, shoulOpenNewTab }) {
     </a>
   );
 }
-
-export default Link;
