@@ -11,12 +11,6 @@ export function ReviewForm( {onReviewSubmit}) {
         const author = inputValue;
         const text = textareaValue;
 
-        // setReviews((prevReviews) => {
-        //     return [
-        //         { author, text, id: prevReviews.length + 1 },
-        //         ...prevReviews,
-        //     ]
-        // });
         onReviewSubmit(author, text);
         setInputValue("");
         setTextareaValue("")

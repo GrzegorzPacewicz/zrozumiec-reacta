@@ -20,8 +20,13 @@ function App() {
             <LikesCounter/>
             <Plot/>
             <Reviews reviews={reviews} />
-            <ReviewForm onReviewSubmit={({author, text}) =>  {
-                setReviews();
+            <ReviewForm onReviewSubmit={(author, text) =>  {
+                setReviews((prevReviews) => {
+                    return [
+                        { author, text, id: prevReviews.length + 1 },
+                        ...prevReviews,
+                    ]
+                });
             }
             }/>
         </>
