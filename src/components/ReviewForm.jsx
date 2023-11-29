@@ -1,6 +1,6 @@
 import { useState } from "react";
 
-export function ReviewForm() {
+export function ReviewForm( {onReviewSubmit}) {
 
     const [inputValue, setInputValue] = useState("");
     const [textareaValue, setTextareaValue] = useState("");
@@ -17,6 +17,7 @@ export function ReviewForm() {
         //         ...prevReviews,
         //     ]
         // });
+        onReviewSubmit(author, text);
         setInputValue("");
         setTextareaValue("")
     }
