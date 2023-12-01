@@ -13,6 +13,15 @@ function App() {
 
     const [reviews, setReviews] = useState(initialReviews)
 
+    const handleReviewSubmit = (author, text) =>  {
+        setReviews((prevReviews) => {
+            return [
+                { author, text, id: prevReviews.length + 1 },
+                ...prevReviews,
+            ]
+        });
+    }
+
     return (
         <>
             <h1>Gwiezdne wojny</h1>
@@ -20,15 +29,7 @@ function App() {
             <LikesCounter/>
             <Plot/>
             <Reviews reviews={reviews} />
-            <ReviewForm onReviewSubmit={(author, text) =>  {
-                setReviews((prevReviews) => {
-                    return [
-                        { author, text, id: prevReviews.length + 1 },
-                        ...prevReviews,
-                    ]
-                });
-            }
-            }/>
+            <ReviewForm onReviewSubmit={handleReviewSubmit}/>
         </>
     );
 }

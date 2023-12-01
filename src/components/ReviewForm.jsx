@@ -12,6 +12,7 @@ export function ReviewForm( {onReviewSubmit}) {
         const text = textareaValue;
 
         onReviewSubmit(author, text);
+
         setInputValue("");
         setTextareaValue("")
     }
