@@ -1,5 +1,3 @@
-import React, { useState } from 'react';
-
 export function LikesCounter({numberOfLikes, onLikeButtonClick, onLoveButtonClick}) {
 
    return (
