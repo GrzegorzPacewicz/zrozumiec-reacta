@@ -1,6 +1,6 @@
 import { useState } from "react";
 
-export function ReviewForm( {onReviewSubmit}) {
+export function ReviewForm({ onReviewSubmit }) {
 
     const [inputValue, setInputValue] = useState("");
     const [textareaValue, setTextareaValue] = useState("");
