@@ -4,7 +4,8 @@ import { Link } from "react-router-dom";
 export function Home() {
     return (
         <>
-            <Link to="filmweb">Filmweb</Link>
+            <p><Link to="filmweb">Filmweb</Link></p>
+            <p><Link to="emojis">Emojis</Link></p>
         </>
     );
 }
