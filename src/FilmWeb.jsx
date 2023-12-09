@@ -1,7 +1,7 @@
-import { LikesCounter } from "./components/LikesCounter.jsx";
-import { Plot } from "./components/Plot.jsx";
-import { ReviewForm } from "./components/ReviewForm.jsx";
-import { Reviews } from "./components/Reviews.jsx";
+import { LikesCounter } from "./components/FilmWeb/LikesCounter.jsx";
+import { Plot } from "./components/FilmWeb/Plot.jsx";
+import { ReviewForm } from "./components/FilmWeb/ReviewForm.jsx";
+import { Reviews } from "./components/FilmWeb/Reviews.jsx";
 import { useState } from "react";
 
 const initialReviews = [

@@ -1,7 +1,7 @@
 import { BrowserRouter, Route, Routes } from "react-router-dom";
 import { FilmWeb } from "./FilmWeb.jsx";
 import { Home } from "./components/Home.jsx";
-import { DynamicEmojis } from "./components/DynamicEmojis.jsx";
+import { DynamicEmojis } from "./DynamicEmojis.jsx";
 
 function App() {
 
