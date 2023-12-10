@@ -1,7 +1,7 @@
 import { BrowserRouter, Route, Routes } from "react-router-dom";
 import { FilmWeb } from "./FilmWeb.jsx";
 import { Home } from "./components/Home.jsx";
-import { DynamicEmojis } from "./DynamicEmojis.jsx";
+import { Emojis } from "./Emojis.jsx";
 
 function App() {
 
@@ -11,7 +11,7 @@ function App() {
                 <Routes>
                     <Route path="/" element={<Home/>}/>
                     <Route path="/filmweb" element={<FilmWeb/>}/>
-                    <Route path="/emojis" element={<DynamicEmojis/>}/>
+                    <Route path="/emojis" element={<Emojis/>}/>
                 </Routes>
             </BrowserRouter>
         </>
