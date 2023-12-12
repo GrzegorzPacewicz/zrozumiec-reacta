@@ -3,7 +3,7 @@ import { Item } from "../Item/Item.jsx";
 const emojis = ["🚀", "🎶", "🎁", "🎉", "✨"];
 
 export function List() {
-    return (
+        return (
         <>
             <button
                 className="bg-transparent border border-solid p-3 border-salmon rounded cursor-pointer w-32 text-salmon transition-colors duration-300 m-8 hover:text-white hover:bg-salmon "
